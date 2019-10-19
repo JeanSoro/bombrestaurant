@@ -40,6 +40,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .height-90 {
@@ -49,6 +50,29 @@ body {
 .banner h1 {
   border-top: 6px dotted #c9c1ac;
   border-bottom: 6px dotted #c9c1ac;
+  animation: enterLeft;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enterLeft {
+
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(30px)
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
 }
 
 
@@ -63,6 +87,63 @@ body {
   color: #242424;
   border: 2px solid #c9c1ac;
   background: #c9c1ac;
+}
+
+.sushi-btn {
+  animation: enterRight;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enterRight {
+
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-30px)
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+.header-link {
+  animation: comeUp;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background: #c9c1ac;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transition: all .3s ease;
+}
+
+.header-link:hover {
+  color: #242424;
+}
+
+@keyframes comeUp {
+  0% {
+    transform: translateY(-10px)
+  }
+
+  50% {
+    transform: translateY(10px)
+  }
+
+  100% {
+    transform: translateY(-10px)
+  }
 }
 
 /*-----> END of Header Section*/
