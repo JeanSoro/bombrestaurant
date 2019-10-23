@@ -296,4 +296,50 @@ body {
   transform: translateY(-5px);
 }
 
-/* PICK UP LESSON AT 2:56:18 */
+/*-----> CONTACT SECTION */
+
+.height-60 {
+  min-height: 60vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+  cursor: pointer;
+
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #d3325f;
+}
+
+#contact .input-group-text {
+  background: #d3325f;
+  border-color: #d3325f;
+  color: #242424;
+}
+
+#contact .card input {
+  color: #606060;
+}
+
+#contact .card input::placeholder {
+  color: #606060
+}
+
+.contact-btn {
+  color: yellow;
+  border-color: yellow;
+  background: transparent;
+  transition: all 1s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #c9c1ac;
+  color: #fff;
+  border-color: black;
+}
