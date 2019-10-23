@@ -343,3 +343,19 @@ body {
   color: #fff;
   border-color: black;
 }
+
+/* -------------------- */
+/* --------->Footer section */
+/* ------------------- */
+
+#back-to-top {
+  background: #c9c1ac;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+}
