@@ -5,12 +5,12 @@ $(document).ready(function () {
     $('.navbar-toggler').toggleClass('change')
   })
 
-  //sticky navbar less padding 718 to 640
 
+  //sticky navbar less padding 718 to 640
   $(window).scroll(function () {
     let position = $(this).scrollTop();
 
-    if (position >= 640) {
+    if (position >= 850) {
       $('.navbar').addClass('navbar-background');
       $('.navbar').addClass('fixed-top');
     } else {
@@ -20,7 +20,6 @@ $(document).ready(function () {
   })
 
   //smooth scroll
-
   $('.nav-item a, .header-link, #back-to-top').click(function (link) {
     link.preventDefault();
 
@@ -32,19 +31,28 @@ $(document).ready(function () {
 
   })
 
+  //back to top
+  $(window).scroll(function () {
+    let position = $(this).scrollTop();
 
+    if (position >= 640) {
+      $('#back-to-top').addClass('scrollTop');
 
-
-
-
+    } else {
+      $('#back-to-top').removeClass('scrollTop');
+    }
+  })
 
 
 
 
   //ripples
-  $(".banner, .info").ripples({
-    dropRadius: 25,
-    perturbance: 0.6,
+  $("#header, .info").ripples({
+    dropRadius: 18,
+    // dropRadius: 25,
+    perturbance: 0.04,
+    // perturbance: 0.6,
+
   });
 
   //popup
